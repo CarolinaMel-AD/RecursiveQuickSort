@@ -34,7 +34,8 @@ public class Main {
         if( low == pivotIndex ){
             return pivotIndex;
         }
-        else {
+        else 
+        {
             int pivot = list.get(pivotIndex);
             if( list.get(low) > pivot ){
                 moveBack(list, low);
@@ -79,14 +80,3 @@ public class Main {
         printList(list);
     }
 }
-
-
-/*
-
- public static int getRandomElementOf(List<Integer> list){
- Random rand = new Random();
- int randomIndex = rand.nextInt(list.size());
- return list.get(randomIndex);
- }
- *
- */
